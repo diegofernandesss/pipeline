@@ -3,20 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '''
-                python -m venv env
-                . env/bin/activate
-                pip install --upgrade pip
-                pip install flask
-                '''
+                sh 'sh -c pip install flask'
             }
         }
         stage('test') {
             steps {
-                sh '''
-                . env/bin/activate
-                python test.py
-                '''
+                sh 'sh -c python test.py'
             }
         }
     }
