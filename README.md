@@ -32,7 +32,7 @@ Em primeiro momento iremos dar permissões para que possa evitar possíveis prob
   cut -d: -f1 /etc/passwd
 ```
 
-> #### Já que o Jenkins não será listado. Adicione através desse dos comandos colocando tanto no Docker como no root:
+> #### Já que o Jenkins não será listado. Adicione através desse dois comandos colocando tanto no Docker como no root:
 
 
 ```bash
