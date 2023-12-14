@@ -29,10 +29,38 @@ Em primeiro momento iremos dar permissões para que possa evitar possíveis prob
 
 
 ```bash
-  sudo chmod 777 docker.sock
+  cut -d: -f1 /etc/passwd
+```
+
+> #### Já que o Jenkins não será listado. Adcione através desse dos comandos colocando tanto no Docker como no root:
+
+
+```bash
+  sudo usermod -aG docker jenkins
+```
+
+```bash
+  sudo usermod -aG root jenkins
+```
+
+> #### Visualizar se os usuários foram adicionados:
+
+```bash
+  grep docker /etc/group
+```
+```bash
+  grep root /etc/group
+```
+
+> #### Adicionar também na host(máquina local) ao grupo Docker:
+
+```bash
+  sudo usermod -aG docker $USER 
 ```
 
 ## Criação da Pipeline:
+
+
 
 <p align="center">
     <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/422df72c-f116-4643-9c9e-87571801c550" width="300" hspace="20"/>
