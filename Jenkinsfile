@@ -2,7 +2,7 @@
 pipeline {
     agent { docker { image 'python:3.7.2' } }
     enviroment {
-        ATIVACAO_VENV = "env/bin/activate"
+        ATIVACAO_VENV = 'env/bin/activate'
     }
     stages {
         stage('build') {
