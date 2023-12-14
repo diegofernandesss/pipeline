@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'bash -c "chmod+x /.local"'
                 sh 'pip install -r requirements.txt --user'
             }
         }
