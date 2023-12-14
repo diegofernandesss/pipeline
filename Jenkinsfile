@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'virtualenv venv --distribute'
+                sh 'virtualenv venv'
                 sh 'bash -c ". venv/bin/activate && pip install flask"'
             }
         }
