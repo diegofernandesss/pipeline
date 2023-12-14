@@ -7,8 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python -m venv env'
-                sh 'bash -c "source $ATIVACAO_VENV && pip install --upgrade pip"'
-                sh 'bash -c "source $ATIVACAO_VENV && pip install flask"'
+                sh 'bash -c "source $ATIVACAO_VENV && pip install --upgrade pip && pip install flask"'
             }
         }
         stage('test') {
