@@ -52,7 +52,7 @@ Em primeiro momento iremos dar permissões para que possa evitar possíveis prob
   grep root /etc/group
 ```
 
-> #### Adicionar também na host(máquina local) ao grupo Docker:
+> #### Adicionar também no host(máquina local) ao grupo Docker:
 
 ```bash
   sudo usermod -aG docker $USER 
