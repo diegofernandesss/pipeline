@@ -58,7 +58,8 @@ Em primeiro momento iremos dar permissões para que possa evitar possíveis prob
   sudo usermod -aG docker $USER 
 ```
 
-## Criação da Pipeline:
+> [!TIP]
+> ## Criação da Pipeline:
 
 
 
