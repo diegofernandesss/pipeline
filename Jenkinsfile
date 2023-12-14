@@ -1,15 +1,18 @@
 pipeline {
     agent { docker { image 'python:3.7.2' } }
+    environment {
+        ATIVACAO_VENV = '. venv/bin/activate'
+    }
     stages {
         stage('build') {
             steps {
-                sh 'virtualenv venv'
-                sh 'bash -c ". venv/bin/activate && pip install flask"'
+                sh 'python -m venv venv'
+                sh 'bash -c "$ATIVACAO_VENV && pip install flask"'
             }
         }
         stage('test') {
             steps {
-                sh 'bash -c ". venv/bin/activate && python test.py"'
+                sh 'bash -c "$ATIVACAO_VENV && python test.py"'
             }
         }
     }
