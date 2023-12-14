@@ -10,10 +10,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh '''
-                . env/bin/activate
-                python test.py
-                '''
+                sh 'bash -c "source env/bin/activate; python test.py"'
             }
         }
     }
