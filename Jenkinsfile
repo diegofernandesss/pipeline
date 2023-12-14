@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                    sh 'chmod -R 777 /.local'
+                    sh 'chmod 777 /.local'
                     sh 'pip install --user flask'
                 }
             }
