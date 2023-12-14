@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python -m venv venv'
-                sh ' bash -c "$ATIVACAO_VENV && pip install --upgrade pip && pip install -r requirements.txt"'
+                sh ' bash -c "$ATIVACAO_VENV && pip install -r requirements.txt"'
             }
         }
         stage('test') {
