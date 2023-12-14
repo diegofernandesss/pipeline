@@ -1,17 +1,23 @@
+
 pipeline {
-    agent { docker { image 'python:3.10' } }
+    agent { docker { image 'python:3.7.2' } }
     stages {
         stage('build') {
             steps {
-                script {
-                    sh 'pip install --user flask'
-                    sh 'chmod -R 777 /.local'
-                }
+                sh '''
+                python -m venv env
+                . env/bin/activate
+                pip install --upgrade pip
+                pip install flask
+                '''
             }
         }
         stage('test') {
             steps {
-                sh 'python test.py'
+                sh '''
+                . env/bin/activate
+                python test.py
+                '''
             }
         }
     }
