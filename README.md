@@ -45,7 +45,7 @@ Em primeiro momento iremos dar permissões para que possa evitar possíveis prob
     </figure>
   <figure>
         <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/e4e8a5eb-a9e6-471b-ac79-bf719d98f485" width="400" hspace="20"/> 
-        <figcaption>Inserir nome da Pipeline, selecionar a pipeline e clicar em "Tudo Certo"</figcaption>
+        <figcaption>Inserir nome da Pipeline, Selecionar a Pipeline</figcaption>
     </figure>
 </p>
 
