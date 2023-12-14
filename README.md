@@ -61,12 +61,23 @@ Em primeiro momento iremos dar permissões para que possa evitar possíveis prob
 > [!TIP]
 > ## Criação da Pipeline:
 
+<ol>
+  <li>Login no Sistema. Inserindo seu "usuário" e "senha"</li>
+  <li>Adicionar uma "Novo Tarefa"</li>
+  <li>Crie um nome para a pipeline, clique na opção "Pipeline" e depois em "Tudo Certo"</li>
+  <li>Inserir uma pequena "Descrição" da sua Pipeline</li>
+  <li>Na mesma página do item 4, desça até encontrar a parte de "definition" onde substitui a opção "Pipeline script" por "Pipeline script from SCM". Após isso selecione no item "SCM" coloque "Git", insira as informações do Git Hub no "Repository URL" no caso, essa URL "https://github.com/diegofernandesss/pipeline.git" e na "Branch Specifier", troque de "*/master" para "*/main"  </li>
+  <li>Após que clicar em "Tudo Certo". Você será redirecionado para outra página e clique em Construir. Nessa mesma Tela clique em "Open Blue Ocean" para ver o progresso das Pipelines.</li>
+</ol>
 
+> #### Imagens Representativas:
 
 <p align="center">
     <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/422df72c-f116-4643-9c9e-87571801c550" width="300" hspace="20"/>
     <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/25b5bea6-274c-43f0-b6fc-8f904cf23df6" width="300" hspace="20"/> 
-    <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/e4e8a5eb-a9e6-471b-ac79-bf719d98f485" width="300" hspace="20"/> 
+    <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/e4e8a5eb-a9e6-471b-ac79-bf719d98f485" width="300" hspace="20"/>
+    <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/fda9ba0c-57b2-47ab-8a1c-b6ffb064c99e" width="300" hspace="20"/>
+    <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/e14b4b0d-ad13-476c-a288-bc753c531a1c" width="300" hspace="20"/>
     <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/7569cdaf-66a4-4964-b60d-c5efeef30b16" width="300" hspace="20"/>
     <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/73fe9e71-a6c5-4803-b86f-0b808c64a787" width="300" hspace="20"/>
     <img src="https://github.com/diegofernandesss/pipeline/assets/88402851/59b1f06a-479f-4362-92d8-4127d8f8a82c" width="300" hspace="20"/>
