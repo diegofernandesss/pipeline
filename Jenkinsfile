@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python -m venv env'
-                sh 'sh -c "source env/bin/activate; pip install flask"'
+                sh 'bash -c "source env/bin/activate; pip install flask"'
             }
         }
         stage('test') {
