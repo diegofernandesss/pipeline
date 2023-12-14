@@ -66,7 +66,7 @@ Em primeiro momento iremos dar permissões para que possa evitar possíveis prob
   <li>Adicionar uma "Novo Tarefa"</li>
   <li>Crie um nome para a pipeline, clique na opção "Pipeline" e depois em "Tudo Certo"</li>
   <li>Inserir uma pequena "Descrição" da sua Pipeline</li>
-  <li>Na mesma página do item 4, desça até encontrar a parte de "definition" onde substitui a opção "Pipeline script" por "Pipeline script from SCM". Após isso selecione no item "SCM" coloque "Git", insira as informações do Git Hub no "Repository URL" no caso, essa URL "https://github.com/diegofernandesss/pipeline.git" e na "Branch Specifier", troque de "*/master" para "*/main"  </li>
+  <li>Na mesma página do item 4, desça até encontrar a parte de "definition" onde substitui a opção "Pipeline script" por "Pipeline script from SCM". Após isso selecione no item "SCM" coloque "Git", insira as informações do Git Hub no "Repository URL" no caso, essa URL "https://github.com/diegofernandesss/pipeline.git" e na "Branch Specifier", troque de "*/master" para "*/main" e depois em Salvar  </li>
   <li>Após que clicar em "Tudo Certo". Você será redirecionado para outra página e clique em Construir. Nessa mesma Tela clique em "Open Blue Ocean" para ver o progresso das Pipelines.</li>
 </ol>
 
